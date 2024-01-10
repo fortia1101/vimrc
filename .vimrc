@@ -5,6 +5,7 @@ set number
 set background=dark
 set nowritebackup
 set nobackup
+set noswapfile
 set noundofile
 set fenc=utf-8
 set expandtab
