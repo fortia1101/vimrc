@@ -16,16 +16,23 @@ set listchars=tab:^\ ,trail:~
 set noerrorbells
 set novisualbell
 set cursorline
+set autoindent
+set showcmd
+
+"----------------------------
+" Key Map
+"----------------------------
+let mapleader="\<Space>"
 
 "----------------------------
 " Color
 "----------------------------
-syntax on
+syntax enable
 colorscheme hybrid
 let g:hybrid_use_iTerm_colors=2
 hi LineNr ctermbg=0 ctermfg=darkblue
 hi CursorLineNr ctermbg=darkblue ctermfg=0
-hi clear CursorLine
+"hi clear CursorLine
 
 "----------------------------
 " Search
@@ -39,6 +46,21 @@ set incsearch
 " View
 "----------------------------
 set showmatch matchtime=1
+
+"----------------------------
+" Status Line
+"----------------------------
+" Show Filename
+set statusline=\ %F
+" Show wether readonly or non-readonly
+set statusline+=\ %r
+" Show right-justify from here
+set statusline+=%=
+" File encoding
+set statusline+=%{&fileencoding}\ \ 
+" Row number
+set statusline+=%l/%L\ \ 
+" Always show Status Line
 set laststatus=2
 
 "----------------------------
