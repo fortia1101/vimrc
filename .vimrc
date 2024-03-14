@@ -59,7 +59,7 @@ set statusline+=%=
 " File encoding
 set statusline+=%{&fileencoding}\ \ 
 " Row number
-set statusline+=%l/%L\ \ 
+set statusline+=Ln\ %l/%L\ \ 
 " Always show Status Line
 set laststatus=2
 
