@@ -30,8 +30,9 @@ let mapleader="\<Space>"
 syntax enable
 colorscheme hybrid
 let g:hybrid_use_iTerm_colors=2
-hi LineNr ctermbg=0 ctermfg=darkblue
-hi CursorLineNr ctermbg=darkblue ctermfg=0
+hi Normal ctermfg=253
+hi LineNr ctermfg=98 ctermbg=0 
+hi CursorLineNr ctermfg=0 ctermbg=98
 "hi clear CursorLine
 
 "----------------------------
