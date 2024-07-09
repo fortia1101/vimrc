@@ -12,7 +12,8 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set backspace=indent,eol,start
-set listchars=tab:^\ ,trail:~
+set list
+set listchars=tab:\ \ ≫,space:･
 set noerrorbells
 set novisualbell
 set cursorline
