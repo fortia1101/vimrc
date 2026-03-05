@@ -36,6 +36,16 @@ hi LineNr ctermfg=98 ctermbg=0
 hi CursorLineNr ctermfg=0 ctermbg=98
 
 "----------------------------
+" Cursor
+"----------------------------
+" Set cursor to blinking block in normal mode
+let &t_EI = "\e[1 q"
+" Set cursor to blinking underline in replace mode
+let &t_SR = "\e[3 q"
+" Set cursor to blinking bar in insert mode
+let &t_SI = "\e[5 q"
+
+"----------------------------
 " Search
 "----------------------------
 set ignorecase
